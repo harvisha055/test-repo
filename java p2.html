@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+        #myid {
+         font-style: inherit ;
+         font-size: 40px;
+            color: rgb(129, 78, 2)
+        }
+        </style>
+        </head>
+<body>
+<button id="myname" onclick="myFunction()">hide Me!</button>
+
+<p id="myid">
+HARVISHA SIDDHAPARA
+</p>
+
+<script>
+function myFunction() {
+  var x = document.getElementById("myid");
+  var y = document.getElementById("myname");
+  
+  if (x.style.display === "none") {
+    x.style.display = "block";
+    y.textContent = "hide me";
+  } 
+  else {
+    x.style.display = "none";
+    y.textContent = "show me";
+  }
+}
+</script>
+
+</body>
+</html>
